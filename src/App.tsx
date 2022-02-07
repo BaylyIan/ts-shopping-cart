@@ -49,6 +49,7 @@ const App = () => {
       //is item already in the cart?
       const isItemInCart = prev.find((item) => item.id === clickedItem.id);
 
+      //map out items, if selected item = current item, set amount to current amount + 1
       if (isItemInCart) {
         return prev.map(item =>
           item.id === clickedItem.id
