@@ -58,7 +58,7 @@ const App = () => {
         );
       }
 
-      //first time item is added, spread rest of items, spread the clicked item, define amount key and set to 1
+      //first time item is added, spread rest of items
       return [...prev, { ...clickedItem, amount: 1}]
     });
   };
